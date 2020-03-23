@@ -1,0 +1,80 @@
+*, :after, :before
+    margin: 0
+    box-sizing: border-box
+    -webkit-box-sizing: border-box
+
+$primary-orange: #feb960
+$primary-background: #202020
+$secondary-background: #181818
+
+.container
+    margin: 0 auto
+    max-width: 1170px
+
+.title
+    font-weight: 500
+    font-size: 75px
+    color: #ffffff
+    font-family: 'Baloo Da 2', cursive
+
+.link
+    color: #ffffff
+    text-decoration: none
+
+.subtitle
+    text-align: center
+    color: $primary-orange
+    font-size: 20px
+    font-family: 'Baloo Da 2', cursive
+
+.chapter
+    font-size: 20px
+    margin-top: 20px
+    font-weight: 500
+    text-align: center
+    color: $primary-orange
+    font-family: 'Baloo Da 2', cursive
+
+.divider
+    border: 0
+    width: 1px
+    height: 124px
+    background: $primary-orange
+
+.transparent
+    color: #ffffff
+
+.items
+    display: flex
+    justify-content: space-between
+
+.header
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    height: 100vh
+    background-image: url('/images/background-main.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+
+    .start-block
+        display: flex
+        flex-direction: column
+        margin-bottom: 200px
+        align-items: flex-end
+        border: 1px solid #595959
+        padding: 75px
+
+.services
+    height: 100vh
+    background: $primary-background
+
+.projects
+    height: 100vh
+    background: $secondary-background
+
+.contact
+    height: 100vh
+    background: $primary-background
