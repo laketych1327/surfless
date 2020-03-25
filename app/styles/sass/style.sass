@@ -2,6 +2,7 @@
     margin: 0
     box-sizing: border-box
     -webkit-box-sizing: border-box
+    font-family: 'Baloo Da 2', cursive
 
 $primary-orange: #feb960
 $primary-background: #202020
@@ -11,11 +12,16 @@ $secondary-background: #181818
     margin: 0 auto
     max-width: 1170px
 
+.wrapper
+    display: flex
+    flex-direction: row
+    justify-content:
+
 .title
     font-weight: 500
     font-size: 75px
     color: #ffffff
-    font-family: 'Baloo Da 2', cursive
+    margin: 50px 0px
 
 .link
     color: #ffffff
@@ -25,7 +31,6 @@ $secondary-background: #181818
     text-align: center
     color: $primary-orange
     font-size: 20px
-    font-family: 'Baloo Da 2', cursive
 
 .chapter
     font-size: 20px
@@ -33,13 +38,34 @@ $secondary-background: #181818
     font-weight: 500
     text-align: center
     color: $primary-orange
-    font-family: 'Baloo Da 2', cursive
 
 .divider
+    margin: auto
     border: 0
     width: 1px
     height: 124px
     background: $primary-orange
+
+.side-divider
+    border: 0
+    width: 1px
+    height: 124px
+    background: $primary-orange
+
+.down-divider
+    position: absolute
+    bottom: 90px
+    right: 500px
+    border: 0
+    width: 1px
+    height: 124px
+    background: $primary-orange
+
+.side-chapter
+    font-size: 20px
+    margin-top: 20px
+    font-weight: 500
+    color: $primary-orange
 
 .transparent
     color: #ffffff
@@ -47,6 +73,36 @@ $secondary-background: #181818
 .items
     display: flex
     justify-content: space-between
+
+.list
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+.item
+    max-width: 300px
+    margin: 100px 50px 150px 0px
+    &:last-child
+        margin: 100px 0px 150px 0px
+
+    .subtitle
+        text-align: justify
+        margin-top: 15px
+
+.description
+    color: #ffffff
+    font-size: 14px
+    text-align: justify
+
+.explanation
+    color: #bbbbbb
+    font-size: 14px
+    margin-bottom: 15px
+
+.caption
+    color: #fff
+    font-size: 50px
+    font-weight: 600
 
 .header
     display: flex
@@ -71,10 +127,93 @@ $secondary-background: #181818
     height: 100vh
     background: $primary-background
 
+    .skills
+        display: flex
+
+        .skills__article
+            display: flex
+            justify-content: center
+
+            border-right: 1px solid $primary-orange
+            writing-mode: vertical-rl
+            text-orientation: mixed
+            padding: 25px 20px
+            color: $primary-orange
+
+        .skills__list
+            display: flex
+            flex-direction: row
+            align-items: center
+
+            .asd
+                width: 100%
+                height: 100px
+
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: contain
+                    filter: grayscale(100%)
+
 .projects
+    padding: 50px 0px
     height: 100vh
     background: $secondary-background
 
+    .swiper-container
+        width: 800px
+        height: 90vh
+        color: #ffffff
+
+        .swiper-slide
+            height: 95%
+
+            .slide__image
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: 0 0
+
+        .project__name
+            position: absolute
+
+            font-weight: 900
+            font-size: 100px
+            margin-left: -100px
+            color: $primary-orange
+
+        .swiper-pagination
+            margin-left: -40px
+
+        .swiper-pagination-bullet
+            width: 30px
+            height: 3px
+            display: inline-block
+            border-radius: 0%
+            background: #4d4d4d
+            opacity: 1
+
+        .swiper-pagination-bullet-active
+            background: $primary-orange
+
 .contact
+    position: relative
     height: 100vh
     background: $primary-background
+
+    .item
+        max-width: 400px
+
+        textarea
+            padding: 100px
+            width: 100%
+
+    .over
+        position: absolute
+        bottom: 100px
+        right: 43%
+        font-size: 20px
+        color: #8f919a
+
+        span
+            color: $primary-orange

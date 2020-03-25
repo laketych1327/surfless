@@ -1,0 +1,63 @@
+
+form {
+    margin: auto;
+    display: none;
+    max-width: 400px;
+    padding: 20px 0px;
+    display: block;
+    position: relative;
+    z-index: 500;
+  }
+
+  .form-group {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 30px;
+    position: relative;
+    font-size: 15px;
+    color: #ffffff;
+  }
+
+  .form-group + .form-group {
+    margin-top: 30px;
+  }
+
+  .form-group .form-label {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    z-index: 1;
+    font-size: 24px;
+    transform: transition(0.3s);
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+  .form-group .form-control {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    border: none;
+    height: 35px;
+    color: #fff;
+    padding: 5px 0;
+    background: none;
+    border-bottom: 1px solid #777;
+  }
+
+  .form-group .form-control:invalid {
+    outline: none;
+    font-size: 30px;
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+  .form-group .form-control:focus, .form-group .form-control:valid {
+    outline: none;
+    font-size: 30px;
+    border-color: #feb960;
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+  .form-group .form-control:focus + .form-label, .form-group .form-control:valid + .form-label {
+    font-size: 14px;
+    color: #feb960;
+    transform: translateY(-15px);
+  }

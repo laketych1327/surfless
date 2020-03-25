@@ -2,6 +2,7 @@
   margin: 0;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-family: 'Baloo Da 2', cursive;
 }
 
 .container {
@@ -9,11 +10,16 @@
   max-width: 1170px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .title {
   font-weight: 500;
   font-size: 75px;
   color: #ffffff;
-  font-family: 'Baloo Da 2', cursive;
+  margin: 50px 0px;
 }
 
 .link {
@@ -25,7 +31,6 @@
   text-align: center;
   color: #feb960;
   font-size: 20px;
-  font-family: 'Baloo Da 2', cursive;
 }
 
 .chapter {
@@ -34,14 +39,38 @@
   font-weight: 500;
   text-align: center;
   color: #feb960;
-  font-family: 'Baloo Da 2', cursive;
 }
 
 .divider {
+  margin: auto;
   border: 0;
   width: 1px;
   height: 124px;
   background: #feb960;
+}
+
+.side-divider {
+  border: 0;
+  width: 1px;
+  height: 124px;
+  background: #feb960;
+}
+
+.down-divider {
+  position: absolute;
+  bottom: 90px;
+  right: 500px;
+  border: 0;
+  width: 1px;
+  height: 124px;
+  background: #feb960;
+}
+
+.side-chapter {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #feb960;
 }
 
 .transparent {
@@ -51,6 +80,44 @@
 .items {
   display: flex;
   justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.item {
+  max-width: 300px;
+  margin: 100px 50px 150px 0px;
+}
+
+.item:last-child {
+  margin: 100px 0px 150px 0px;
+}
+
+.item .subtitle {
+  text-align: justify;
+  margin-top: 15px;
+}
+
+.description {
+  color: #ffffff;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.explanation {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.caption {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .header {
@@ -78,12 +145,109 @@
   background: #202020;
 }
 
+.services .skills {
+  display: flex;
+}
+
+.services .skills .skills__article {
+  display: flex;
+  justify-content: center;
+  border-right: 1px solid #feb960;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 25px 20px;
+  color: #feb960;
+}
+
+.services .skills .skills__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.services .skills .skills__list .asd {
+  width: 100%;
+  height: 100px;
+}
+
+.services .skills .skills__list .asd img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
 .projects {
+  padding: 50px 0px;
   height: 100vh;
   background: #181818;
 }
 
+.projects .swiper-container {
+  width: 800px;
+  height: 90vh;
+  color: #ffffff;
+}
+
+.projects .swiper-container .swiper-slide {
+  height: 95%;
+}
+
+.projects .swiper-container .swiper-slide .slide__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 0;
+}
+
+.projects .swiper-container .project__name {
+  position: absolute;
+  font-weight: 900;
+  font-size: 100px;
+  margin-left: -100px;
+  color: #feb960;
+}
+
+.projects .swiper-container .swiper-pagination {
+  margin-left: -40px;
+}
+
+.projects .swiper-container .swiper-pagination-bullet {
+  width: 30px;
+  height: 3px;
+  display: inline-block;
+  border-radius: 0%;
+  background: #4d4d4d;
+  opacity: 1;
+}
+
+.projects .swiper-container .swiper-pagination-bullet-active {
+  background: #feb960;
+}
+
 .contact {
+  position: relative;
   height: 100vh;
   background: #202020;
+}
+
+.contact .item {
+  max-width: 400px;
+}
+
+.contact .item textarea {
+  padding: 100px;
+  width: 100%;
+}
+
+.contact .over {
+  position: absolute;
+  bottom: 100px;
+  right: 43%;
+  font-size: 20px;
+  color: #8f919a;
+}
+
+.contact .over span {
+  color: #feb960;
 }
